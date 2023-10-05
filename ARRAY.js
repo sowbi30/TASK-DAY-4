@@ -1,0 +1,77 @@
+Do the below programs in arrow functions.
+1 Print odd numbers in an array
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const oddNumbers = numbers.filter(number => number % 2 !== 0);
+
+oddNumbers.forEach(oddNumber => console.log(oddNumber));
+
+//ot -
+1
+3
+5
+7
+9
+
+
+2 Convert all the strings to title caps in a string array
+
+const strings = ["hello", "world", "javascript"];
+
+const titleCaps = strings.map(str => str.charAt(0).toUpperCase() + str.slice(1));
+
+console.log(titleCaps);
+
+//ot-
+[ 'Hello', 'World', 'Javascript' ]
+
+
+3 Sum of all numbers in an array
+
+const numbers = [1, 2, 3, 4, 5];
+
+const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+
+console.log(sum);
+
+//ot - 15
+
+
+4 Return all the prime numbers in an array
+
+function isPrime(num) {
+  if (num <= 1) return false;
+  if (num <= 3) return true;
+
+  if (num % 2 === 0 || num % 3 === 0) return false;
+
+  for (let i = 5; i * i <= num; i += 6) {
+    if (num % i === 0 || num % (i + 2) === 0) return false;
+  }
+
+  return true;
+}
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const primeNumbers = numbers.filter(number => isPrime(number));
+
+console.log(primeNumbers);
+
+//ot- [ 2, 3, 5, 7 ]
+
+
+5 Return all the palindromes in an array
+
+function isPalindrome(str) {
+  const reversed = str.split("").reverse().join("");
+  return str === reversed;
+}
+
+const strings = ["racecar", "hello", "level", "world"];
+
+const palindromes = strings.filter(str => isPalindrome(str));
+
+console.log(palindromes);
+//ot [ 'racecar', 'level' ]
