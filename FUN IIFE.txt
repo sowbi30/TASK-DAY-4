@@ -9,6 +9,13 @@ numbers.forEach(function (number) {
   }
 });
 
+//OT Output:
+1
+3
+5
+7
+9
+
 2 Convert All Strings to Title Caps in a String Array (using anonymous function):
 
 const strings = ["hello", "world", "javascript"];
@@ -18,6 +25,7 @@ const titleCaps = strings.map(function (str) {
 });
 
 console.log(titleCaps);
+// OT - [ 'Hello', 'World', 'Javascript' ]
 
 3 Sum of All Numbers in an Array (using anonymous function):
 
@@ -28,6 +36,8 @@ const sum = numbers.reduce(function (acc, curr) {
 }, 0);
 
 console.log(sum);
+
+// OT 15
 
 4 Return All Prime Numbers in an Array (using anonymous function):
 
@@ -52,6 +62,7 @@ const primeNumbers = numbers.filter(function (number) {
 });
 
 console.log(primeNumbers);
+//OT  [ 2, 3, 5, 7 ]
 
 5 Return All Palindromes in an Array (using anonymous function):
 
@@ -67,6 +78,8 @@ const palindromes = strings.filter(function (str) {
 });
 
 console.log(palindromes);
+
+// ot [ 'racecar', 'level' ]
 
 
 6 Return Median of Two Sorted Arrays of the Same Size (using anonymous function):
@@ -87,6 +100,8 @@ const arr2 = [2, 4, 6];
 
 console.log(findMedianSortedArrays(arr1, arr2));
 
+//ot 3.5
+
 7 Remove Duplicates from an Array (using anonymous function):
 
 const numbers = [1, 2, 2, 3, 4, 4, 5, 5];
@@ -96,7 +111,7 @@ const uniqueNumbers = numbers.filter(function (value, index, self) {
 });
 
 console.log(uniqueNumbers);
-
+//ot [ 1, 2, 3, 4, 5 ]
 
 8 Rotate an Array by k Times (using anonymous function):
 
@@ -112,3 +127,4 @@ const k = 2;
 
 console.log(rotateArray(numbers, k));
 
+//ot [ 3, 4, 5, 1, 2 ]
